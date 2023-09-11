@@ -1,0 +1,11 @@
+/* 
+  InfoPlist.strings
+  SeSACUnsplash
+
+  Created by Eunbee Kang on 2023/09/11.
+  
+*/
+
+"NSLocationWhenInUseUsageDescription" = "이러저러한 사용을 위해 위치 정보가 필요합니다.";
+
+"CFBundleDisplayName" = "언스플래시";
