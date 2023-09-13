@@ -16,6 +16,15 @@
 		7E8726552AAEAE2C000BF9A7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7E8726572AAEAE2C000BF9A7 /* Localizable.strings */; };
 		7E87265B2AAEBAB2000BF9A7 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E87265A2AAEBAB2000BF9A7 /* String+Extension.swift */; };
 		7E87265E2AAEBDDC000BF9A7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7E8726602AAEBDDC000BF9A7 /* InfoPlist.strings */; };
+		7E87266C2AAFED54000BF9A7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E87266B2AAFED54000BF9A7 /* LoginViewController.swift */; };
+		7E87266E2AAFF2FB000BF9A7 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E87266D2AAFF2FB000BF9A7 /* Observable.swift */; };
+		7E8726702AAFFDE7000BF9A7 /* SampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E87266F2AAFFDE7000BF9A7 /* SampleViewController.swift */; };
+		7E8726732AB0015A000BF9A7 /* SampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8726722AB0015A000BF9A7 /* SampleViewModel.swift */; };
+		7E8726752AB00E45000BF9A7 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8726742AB00E45000BF9A7 /* LoginViewModel.swift */; };
+		7E8726782AB02A47000BF9A7 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8726772AB02A47000BF9A7 /* Photo.swift */; };
+		7E87267A2AB02A5D000BF9A7 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8726792AB02A5D000BF9A7 /* APIService.swift */; };
+		7E87267C2AB02B44000BF9A7 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E87267B2AB02B44000BF9A7 /* PhotoViewController.swift */; };
+		7E87267E2AB02DA5000BF9A7 /* PhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E87267D2AB02DA5000BF9A7 /* PhotoViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +48,15 @@
 		7E87265F2AAEBDDC000BF9A7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7E8726612AAEBDDF000BF9A7 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7E8726622AAEBDE0000BF9A7 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7E87266B2AAFED54000BF9A7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		7E87266D2AAFF2FB000BF9A7 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		7E87266F2AAFFDE7000BF9A7 /* SampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewController.swift; sourceTree = "<group>"; };
+		7E8726722AB0015A000BF9A7 /* SampleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewModel.swift; sourceTree = "<group>"; };
+		7E8726742AB00E45000BF9A7 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		7E8726772AB02A47000BF9A7 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		7E8726792AB02A5D000BF9A7 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		7E87267B2AB02B44000BF9A7 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		7E87267D2AB02DA5000BF9A7 /* PhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +89,9 @@
 		7E8726382AAE993B000BF9A7 /* SeSACUnsplash */ = {
 			isa = PBXGroup;
 			children = (
+				7E8726762AB02A3E000BF9A7 /* Photo */,
+				7E8726712AB0014B000BF9A7 /* Sample */,
+				7E87266A2AAFED3B000BF9A7 /* Login */,
 				7E8726392AAE993B000BF9A7 /* AppDelegate.swift */,
 				7E87263B2AAE993B000BF9A7 /* SceneDelegate.swift */,
 				7E87263D2AAE993B000BF9A7 /* ViewController.swift */,
@@ -83,6 +104,36 @@
 				7E8726602AAEBDDC000BF9A7 /* InfoPlist.strings */,
 			);
 			path = SeSACUnsplash;
+			sourceTree = "<group>";
+		};
+		7E87266A2AAFED3B000BF9A7 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				7E87266B2AAFED54000BF9A7 /* LoginViewController.swift */,
+				7E87266D2AAFF2FB000BF9A7 /* Observable.swift */,
+				7E8726742AB00E45000BF9A7 /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		7E8726712AB0014B000BF9A7 /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				7E87266F2AAFFDE7000BF9A7 /* SampleViewController.swift */,
+				7E8726722AB0015A000BF9A7 /* SampleViewModel.swift */,
+			);
+			path = Sample;
+			sourceTree = "<group>";
+		};
+		7E8726762AB02A3E000BF9A7 /* Photo */ = {
+			isa = PBXGroup;
+			children = (
+				7E8726772AB02A47000BF9A7 /* Photo.swift */,
+				7E8726792AB02A5D000BF9A7 /* APIService.swift */,
+				7E87267B2AB02B44000BF9A7 /* PhotoViewController.swift */,
+				7E87267D2AB02DA5000BF9A7 /* PhotoViewModel.swift */,
+			);
+			path = Photo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,7 +214,16 @@
 				7E87265B2AAEBAB2000BF9A7 /* String+Extension.swift in Sources */,
 				7E87263E2AAE993B000BF9A7 /* ViewController.swift in Sources */,
 				7E87263A2AAE993B000BF9A7 /* AppDelegate.swift in Sources */,
+				7E87266C2AAFED54000BF9A7 /* LoginViewController.swift in Sources */,
+				7E87267A2AB02A5D000BF9A7 /* APIService.swift in Sources */,
+				7E87267C2AB02B44000BF9A7 /* PhotoViewController.swift in Sources */,
+				7E8726782AB02A47000BF9A7 /* Photo.swift in Sources */,
+				7E87266E2AAFF2FB000BF9A7 /* Observable.swift in Sources */,
 				7E87263C2AAE993B000BF9A7 /* SceneDelegate.swift in Sources */,
+				7E8726732AB0015A000BF9A7 /* SampleViewModel.swift in Sources */,
+				7E87267E2AB02DA5000BF9A7 /* PhotoViewModel.swift in Sources */,
+				7E8726702AAFFDE7000BF9A7 /* SampleViewController.swift in Sources */,
+				7E8726752AB00E45000BF9A7 /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
