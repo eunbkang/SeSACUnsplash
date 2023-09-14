@@ -25,6 +25,9 @@
 		7E87267A2AB02A5D000BF9A7 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8726792AB02A5D000BF9A7 /* APIService.swift */; };
 		7E87267C2AB02B44000BF9A7 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E87267B2AB02B44000BF9A7 /* PhotoViewController.swift */; };
 		7E87267E2AB02DA5000BF9A7 /* PhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E87267D2AB02DA5000BF9A7 /* PhotoViewModel.swift */; };
+		7E8726812AB139D9000BF9A7 /* CalculateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8726802AB139D9000BF9A7 /* CalculateViewController.swift */; };
+		7E8726832AB13B44000BF9A7 /* CalculateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8726822AB13B44000BF9A7 /* CalculateViewModel.swift */; };
+		7E8726852AB13DAC000BF9A7 /* CalObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8726842AB13DAC000BF9A7 /* CalObservable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +60,9 @@
 		7E8726792AB02A5D000BF9A7 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		7E87267B2AB02B44000BF9A7 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		7E87267D2AB02DA5000BF9A7 /* PhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewModel.swift; sourceTree = "<group>"; };
+		7E8726802AB139D9000BF9A7 /* CalculateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateViewController.swift; sourceTree = "<group>"; };
+		7E8726822AB13B44000BF9A7 /* CalculateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateViewModel.swift; sourceTree = "<group>"; };
+		7E8726842AB13DAC000BF9A7 /* CalObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalObservable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +95,7 @@
 		7E8726382AAE993B000BF9A7 /* SeSACUnsplash */ = {
 			isa = PBXGroup;
 			children = (
+				7E87267F2AB139B1000BF9A7 /* Calculate */,
 				7E8726762AB02A3E000BF9A7 /* Photo */,
 				7E8726712AB0014B000BF9A7 /* Sample */,
 				7E87266A2AAFED3B000BF9A7 /* Login */,
@@ -134,6 +141,16 @@
 				7E87267D2AB02DA5000BF9A7 /* PhotoViewModel.swift */,
 			);
 			path = Photo;
+			sourceTree = "<group>";
+		};
+		7E87267F2AB139B1000BF9A7 /* Calculate */ = {
+			isa = PBXGroup;
+			children = (
+				7E8726802AB139D9000BF9A7 /* CalculateViewController.swift */,
+				7E8726822AB13B44000BF9A7 /* CalculateViewModel.swift */,
+				7E8726842AB13DAC000BF9A7 /* CalObservable.swift */,
+			);
+			path = Calculate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,10 +231,13 @@
 				7E87265B2AAEBAB2000BF9A7 /* String+Extension.swift in Sources */,
 				7E87263E2AAE993B000BF9A7 /* ViewController.swift in Sources */,
 				7E87263A2AAE993B000BF9A7 /* AppDelegate.swift in Sources */,
+				7E8726852AB13DAC000BF9A7 /* CalObservable.swift in Sources */,
 				7E87266C2AAFED54000BF9A7 /* LoginViewController.swift in Sources */,
 				7E87267A2AB02A5D000BF9A7 /* APIService.swift in Sources */,
 				7E87267C2AB02B44000BF9A7 /* PhotoViewController.swift in Sources */,
 				7E8726782AB02A47000BF9A7 /* Photo.swift in Sources */,
+				7E8726832AB13B44000BF9A7 /* CalculateViewModel.swift in Sources */,
+				7E8726812AB139D9000BF9A7 /* CalculateViewController.swift in Sources */,
 				7E87266E2AAFF2FB000BF9A7 /* Observable.swift in Sources */,
 				7E87263C2AAE993B000BF9A7 /* SceneDelegate.swift in Sources */,
 				7E8726732AB0015A000BF9A7 /* SampleViewModel.swift in Sources */,
