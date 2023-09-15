@@ -59,13 +59,19 @@ extension SampleViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "sampleCell") else { return UITableViewCell() }
-        
-        let data = viewModel.cellForFowAt(at: indexPath)
-        
+//        guard let cell = tableView.dequeueReusableCell(withIdentifier: "sampleCell") else { return UITableViewCell() }
+//        let data = viewModel.cellForFowAt(at: indexPath)
         // 레이블에 보여지는 글자는 모델의 연산프로퍼티(호출될때 메모리에 올라감)로 구성
         // 뷰컨트롤러에서 데이터 가공하지 않기 위함
-        cell.textLabel?.text = data.intro
+//        cell.textLabel?.text = data.intro
+        
+        let cell = UITableViewCell() // 클래스이므로 let으로 선언
+        
+        var content = cell.defaultContentConfiguration() // 구조체이므로 var로 선언
+        content.text = "content configuration" // 이전의 textLabel
+        content.secondaryText = "secondary text \(indexPath.row)" // 이전의 detailTextLabel
+        
+        cell.contentConfiguration = content
         
         return cell
     }
