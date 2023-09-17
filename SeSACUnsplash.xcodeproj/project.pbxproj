@@ -31,6 +31,9 @@
 		7E87268F2AB296FC000BF9A7 /* SimpleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E87268E2AB296FC000BF9A7 /* SimpleTableViewController.swift */; };
 		7E8726912AB2A00F000BF9A7 /* SimpleCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8726902AB2A00F000BF9A7 /* SimpleCollectionViewController.swift */; };
 		7E8726942AB2A9DA000BF9A7 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7E8726932AB2A9DA000BF9A7 /* SnapKit */; };
+		7E87269A2AB73E67000BF9A7 /* FocusModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8726992AB73E67000BF9A7 /* FocusModeViewController.swift */; };
+		7E87269C2AB74043000BF9A7 /* FocusMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E87269B2AB74043000BF9A7 /* FocusMode.swift */; };
+		7E87269E2AB74D75000BF9A7 /* FocusModeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E87269D2AB74D75000BF9A7 /* FocusModeType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +71,9 @@
 		7E8726842AB13DAC000BF9A7 /* CalObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalObservable.swift; sourceTree = "<group>"; };
 		7E87268E2AB296FC000BF9A7 /* SimpleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTableViewController.swift; sourceTree = "<group>"; };
 		7E8726902AB2A00F000BF9A7 /* SimpleCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCollectionViewController.swift; sourceTree = "<group>"; };
+		7E8726992AB73E67000BF9A7 /* FocusModeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusModeViewController.swift; sourceTree = "<group>"; };
+		7E87269B2AB74043000BF9A7 /* FocusMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusMode.swift; sourceTree = "<group>"; };
+		7E87269D2AB74D75000BF9A7 /* FocusModeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusModeType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,7 @@
 		7E8726382AAE993B000BF9A7 /* SeSACUnsplash */ = {
 			isa = PBXGroup;
 			children = (
+				7E8726982AB73E1C000BF9A7 /* Setting */,
 				7E87268D2AB296D9000BF9A7 /* New */,
 				7E87267F2AB139B1000BF9A7 /* Calculate */,
 				7E8726762AB02A3E000BF9A7 /* Photo */,
@@ -167,6 +174,16 @@
 				7E8726902AB2A00F000BF9A7 /* SimpleCollectionViewController.swift */,
 			);
 			path = New;
+			sourceTree = "<group>";
+		};
+		7E8726982AB73E1C000BF9A7 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				7E8726992AB73E67000BF9A7 /* FocusModeViewController.swift */,
+				7E87269B2AB74043000BF9A7 /* FocusMode.swift */,
+				7E87269D2AB74D75000BF9A7 /* FocusModeType.swift */,
+			);
+			path = Setting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,6 +272,7 @@
 				7E87263E2AAE993B000BF9A7 /* ViewController.swift in Sources */,
 				7E87263A2AAE993B000BF9A7 /* AppDelegate.swift in Sources */,
 				7E8726912AB2A00F000BF9A7 /* SimpleCollectionViewController.swift in Sources */,
+				7E87269E2AB74D75000BF9A7 /* FocusModeType.swift in Sources */,
 				7E8726852AB13DAC000BF9A7 /* CalObservable.swift in Sources */,
 				7E87266C2AAFED54000BF9A7 /* LoginViewController.swift in Sources */,
 				7E87267A2AB02A5D000BF9A7 /* APIService.swift in Sources */,
@@ -265,8 +283,10 @@
 				7E87266E2AAFF2FB000BF9A7 /* Observable.swift in Sources */,
 				7E87263C2AAE993B000BF9A7 /* SceneDelegate.swift in Sources */,
 				7E8726732AB0015A000BF9A7 /* SampleViewModel.swift in Sources */,
+				7E87269C2AB74043000BF9A7 /* FocusMode.swift in Sources */,
 				7E87267E2AB02DA5000BF9A7 /* PhotoViewModel.swift in Sources */,
 				7E8726702AAFFDE7000BF9A7 /* SampleViewController.swift in Sources */,
+				7E87269A2AB73E67000BF9A7 /* FocusModeViewController.swift in Sources */,
 				7E8726752AB00E45000BF9A7 /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
