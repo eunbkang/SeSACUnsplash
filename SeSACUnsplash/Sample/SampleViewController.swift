@@ -7,12 +7,28 @@
 
 import UIKit
 
-struct User {
+class User: Hashable {
+    let id = UUID().uuidString // Unique. name, age가 같더라도 문제가 생기지 않게
+    
     let name: String
     let age: Int
     
     var intro: String {
         return "\(name), \(age)세"
+    }
+    
+    init(name: String, age: Int) {
+        self.name = name
+        self.age = age
+    }
+    
+    // Equatable 속성에 대한 대응
+    static func == (lhs: User, rhs: User) -> Bool {
+        lhs.id == rhs.id
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id) // id를 기준으로 고유성을 판별하겠다
     }
 }
 
