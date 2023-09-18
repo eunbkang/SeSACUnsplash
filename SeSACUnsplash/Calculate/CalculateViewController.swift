@@ -23,6 +23,7 @@ class CalculateViewController: UIViewController {
         firstTextField.addTarget(self, action: #selector(changedFirstTextField), for: .editingChanged)
         secondTextField.addTarget(self, action: #selector(changedSecondTextField), for: .editingChanged)
 
+        
         viewModel.firstNumber.bind { number in
             self.firstTextField.text = number
         }
@@ -40,6 +41,7 @@ class CalculateViewController: UIViewController {
         }
     }
     
+    // 사용자 입력값 바뀌면(.editingChanged) 뷰모델에 보내줌
     @objc func changedFirstTextField() {
         viewModel.firstNumber.value = firstTextField.text
         viewModel.calculate()

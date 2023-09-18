@@ -15,21 +15,7 @@ class SimpleCollectionViewController: UIViewController {
         case second = 5
     }
     
-    var list = [
-        User(name: "Hue", age: 23),
-        User(name: "Hue", age: 23),
-        User(name: "Jack", age: 21),
-        User(name: "Bran", age: 20),
-        User(name: "Kokojong", age: 20)
-    ]
-    
-    var list2 = [
-        User(name: "Hue", age: 23),
-        User(name: "Jack", age: 21),
-        User(name: "Man", age: 23),
-        User(name: "Bran", age: 20),
-        User(name: "Kokojong", age: 20)
-    ]
+    let viewModel = SimpleViewModel()
     
     var collectionView = UICollectionView(frame: .zero, collectionViewLayout: createLayout())
     
@@ -38,17 +24,34 @@ class SimpleCollectionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let searchBar = UISearchBar()
+        searchBar.delegate = self
+        navigationItem.titleView = searchBar
+        
         view.addSubview(collectionView)
         collectionView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }
         
-        configureDataSource()
+        collectionView.delegate = self
         
+        configureDataSource()
+        updateSnapshot()
+        
+        viewModel.list.bind { users in
+            self.updateSnapshot()
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            self.viewModel.append()
+        }
+    }
+
+    private func updateSnapshot() {
         var snapshot = NSDiffableDataSourceSnapshot<String, User>()
         snapshot.appendSections(["고래밥", "칙촉"])
-        snapshot.appendItems(list, toSection: "고래밥")
-        snapshot.appendItems(list2, toSection: "칙촉")
+        snapshot.appendItems(viewModel.list.value, toSection: "고래밥")
+        snapshot.appendItems(viewModel.list2, toSection: "칙촉")
         
         dataSource.apply(snapshot) // 필요한 시점에 apply
     }
@@ -96,14 +99,28 @@ class SimpleCollectionViewController: UIViewController {
     }
 }
 
-//extension SimpleCollectionViewController: UICollectionViewDataSource {
-//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//        return list.count
-//    }
-//
-//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//        let cell = collectionView.dequeueConfiguredReusableCell(using: cellRegistration, for: indexPath, item: list[indexPath.item])
-//
-//        return cell
-//    }
-//}
+extension SimpleCollectionViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//        if indexPath.section == 0 {
+//            viewModel.removeOneUser(index: indexPath.item)
+//        }
+//        updateSnapshot()
+        
+        // 다른화면으로 넘긴다면 값전달을 위해 indexPath 활용할 것 -> 런타임 에러 발생 가능성
+//        let user = viewModel.list.value[indexPath.item]
+        
+        // 대신 아래와 같이 dataSource 활용
+        guard let user = dataSource.itemIdentifier(for: indexPath) else {
+            // 얼럿 등 대응
+            return
+        }
+        
+        dump(user)
+    }
+}
+
+extension SimpleCollectionViewController: UISearchBarDelegate {
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        viewModel.insertUser(name: searchBar.text)
+    }
+}

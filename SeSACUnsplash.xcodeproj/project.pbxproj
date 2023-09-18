@@ -34,6 +34,9 @@
 		7E87269A2AB73E67000BF9A7 /* FocusModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8726992AB73E67000BF9A7 /* FocusModeViewController.swift */; };
 		7E87269C2AB74043000BF9A7 /* FocusMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E87269B2AB74043000BF9A7 /* FocusMode.swift */; };
 		7E87269E2AB74D75000BF9A7 /* FocusModeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E87269D2AB74D75000BF9A7 /* FocusModeType.swift */; };
+		7E8726A02AB7D345000BF9A7 /* NumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E87269F2AB7D345000BF9A7 /* NumberViewController.swift */; };
+		7E8726A22AB7D931000BF9A7 /* NumberViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8726A12AB7D931000BF9A7 /* NumberViewModel.swift */; };
+		7E8726A42AB7E79E000BF9A7 /* SimpleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8726A32AB7E79E000BF9A7 /* SimpleViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +77,9 @@
 		7E8726992AB73E67000BF9A7 /* FocusModeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusModeViewController.swift; sourceTree = "<group>"; };
 		7E87269B2AB74043000BF9A7 /* FocusMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusMode.swift; sourceTree = "<group>"; };
 		7E87269D2AB74D75000BF9A7 /* FocusModeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusModeType.swift; sourceTree = "<group>"; };
+		7E87269F2AB7D345000BF9A7 /* NumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberViewController.swift; sourceTree = "<group>"; };
+		7E8726A12AB7D931000BF9A7 /* NumberViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberViewModel.swift; sourceTree = "<group>"; };
+		7E8726A32AB7E79E000BF9A7 /* SimpleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +139,8 @@
 				7E87266B2AAFED54000BF9A7 /* LoginViewController.swift */,
 				7E87266D2AAFF2FB000BF9A7 /* Observable.swift */,
 				7E8726742AB00E45000BF9A7 /* LoginViewModel.swift */,
+				7E87269F2AB7D345000BF9A7 /* NumberViewController.swift */,
+				7E8726A12AB7D931000BF9A7 /* NumberViewModel.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -172,6 +180,7 @@
 			children = (
 				7E87268E2AB296FC000BF9A7 /* SimpleTableViewController.swift */,
 				7E8726902AB2A00F000BF9A7 /* SimpleCollectionViewController.swift */,
+				7E8726A32AB7E79E000BF9A7 /* SimpleViewModel.swift */,
 			);
 			path = New;
 			sourceTree = "<group>";
@@ -281,11 +290,14 @@
 				7E8726832AB13B44000BF9A7 /* CalculateViewModel.swift in Sources */,
 				7E8726812AB139D9000BF9A7 /* CalculateViewController.swift in Sources */,
 				7E87266E2AAFF2FB000BF9A7 /* Observable.swift in Sources */,
+				7E8726A42AB7E79E000BF9A7 /* SimpleViewModel.swift in Sources */,
+				7E8726A22AB7D931000BF9A7 /* NumberViewModel.swift in Sources */,
 				7E87263C2AAE993B000BF9A7 /* SceneDelegate.swift in Sources */,
 				7E8726732AB0015A000BF9A7 /* SampleViewModel.swift in Sources */,
 				7E87269C2AB74043000BF9A7 /* FocusMode.swift in Sources */,
 				7E87267E2AB02DA5000BF9A7 /* PhotoViewModel.swift in Sources */,
 				7E8726702AAFFDE7000BF9A7 /* SampleViewController.swift in Sources */,
+				7E8726A02AB7D345000BF9A7 /* NumberViewController.swift in Sources */,
 				7E87269A2AB73E67000BF9A7 /* FocusModeViewController.swift in Sources */,
 				7E8726752AB00E45000BF9A7 /* LoginViewModel.swift in Sources */,
 			);
