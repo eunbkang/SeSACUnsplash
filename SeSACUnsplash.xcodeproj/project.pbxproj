@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3285D0F72AB86C1600584B29 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3285D0F62AB86C1600584B29 /* SignUpViewController.swift */; };
+		3285D0F92AB86CB700584B29 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3285D0F82AB86CB700584B29 /* SignUpView.swift */; };
+		3285D0FB2AB870B600584B29 /* SignUpFieldType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3285D0FA2AB870B600584B29 /* SignUpFieldType.swift */; };
+		3285D0FD2AB89D0400584B29 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3285D0FC2AB89D0400584B29 /* SignUpViewModel.swift */; };
 		7E87263A2AAE993B000BF9A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8726392AAE993B000BF9A7 /* AppDelegate.swift */; };
 		7E87263C2AAE993B000BF9A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E87263B2AAE993B000BF9A7 /* SceneDelegate.swift */; };
 		7E87263E2AAE993B000BF9A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E87263D2AAE993B000BF9A7 /* ViewController.swift */; };
@@ -40,6 +44,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3285D0F62AB86C1600584B29 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		3285D0F82AB86CB700584B29 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		3285D0FA2AB870B600584B29 /* SignUpFieldType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFieldType.swift; sourceTree = "<group>"; };
+		3285D0FC2AB89D0400584B29 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		7E8726362AAE993B000BF9A7 /* SeSACUnsplash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeSACUnsplash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E8726392AAE993B000BF9A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E87263B2AAE993B000BF9A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +102,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3285D0F52AB86C0300584B29 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				3285D0F62AB86C1600584B29 /* SignUpViewController.swift */,
+				3285D0F82AB86CB700584B29 /* SignUpView.swift */,
+				3285D0FA2AB870B600584B29 /* SignUpFieldType.swift */,
+				3285D0FC2AB89D0400584B29 /* SignUpViewModel.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
 		7E87262D2AAE993B000BF9A7 = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +132,7 @@
 		7E8726382AAE993B000BF9A7 /* SeSACUnsplash */ = {
 			isa = PBXGroup;
 			children = (
+				3285D0F52AB86C0300584B29 /* SignUp */,
 				7E8726982AB73E1C000BF9A7 /* Setting */,
 				7E87268D2AB296D9000BF9A7 /* New */,
 				7E87267F2AB139B1000BF9A7 /* Calculate */,
@@ -280,9 +300,13 @@
 				7E87265B2AAEBAB2000BF9A7 /* String+Extension.swift in Sources */,
 				7E87263E2AAE993B000BF9A7 /* ViewController.swift in Sources */,
 				7E87263A2AAE993B000BF9A7 /* AppDelegate.swift in Sources */,
+				3285D0F72AB86C1600584B29 /* SignUpViewController.swift in Sources */,
+				3285D0FB2AB870B600584B29 /* SignUpFieldType.swift in Sources */,
+				3285D0FD2AB89D0400584B29 /* SignUpViewModel.swift in Sources */,
 				7E8726912AB2A00F000BF9A7 /* SimpleCollectionViewController.swift in Sources */,
 				7E87269E2AB74D75000BF9A7 /* FocusModeType.swift in Sources */,
 				7E8726852AB13DAC000BF9A7 /* CalObservable.swift in Sources */,
+				3285D0F92AB86CB700584B29 /* SignUpView.swift in Sources */,
 				7E87266C2AAFED54000BF9A7 /* LoginViewController.swift in Sources */,
 				7E87267A2AB02A5D000BF9A7 /* APIService.swift in Sources */,
 				7E87267C2AB02B44000BF9A7 /* PhotoViewController.swift in Sources */,
