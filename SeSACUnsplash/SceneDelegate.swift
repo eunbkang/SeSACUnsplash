@@ -19,7 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 //        let nav = UINavigationController(rootViewController: SignUpViewController())
 
-        window?.rootViewController = SignUpViewController()
+        window?.rootViewController = RandomViewController()
         window?.makeKeyAndVisible()
     }
 

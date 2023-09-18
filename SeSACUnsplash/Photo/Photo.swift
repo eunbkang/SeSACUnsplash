@@ -17,6 +17,7 @@ struct PhotoResult: Codable, Hashable {
     let id: String
     let created_at: String
     let description: String?
+    let alt_description: String?
     let urls: PhotoURL
     let links: PhotoLink
     let likes: Int
@@ -25,6 +26,7 @@ struct PhotoResult: Codable, Hashable {
 
 struct PhotoURL: Codable, Hashable {
     let full: String
+    let small: String
     let thumb: String
 }
 

@@ -42,6 +42,10 @@
 		7E8726A22AB7D931000BF9A7 /* NumberViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8726A12AB7D931000BF9A7 /* NumberViewModel.swift */; };
 		7E8726A42AB7E79E000BF9A7 /* SimpleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8726A32AB7E79E000BF9A7 /* SimpleViewModel.swift */; };
 		7E8726A62AB8BD73000BF9A7 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 7E8726A52AB8BD73000BF9A7 /* .gitignore */; };
+		7E8726A92AB8BDAD000BF9A7 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8726A82AB8BDAD000BF9A7 /* APIKey.swift */; };
+		7E8726AC2AB8BFDA000BF9A7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8726AB2AB8BFDA000BF9A7 /* Constants.swift */; };
+		7E8726AF2AB8C0F3000BF9A7 /* RandomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8726AE2AB8C0F3000BF9A7 /* RandomViewController.swift */; };
+		7E8726B12AB8C26C000BF9A7 /* RandomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8726B02AB8C26C000BF9A7 /* RandomViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +94,10 @@
 		7E8726A12AB7D931000BF9A7 /* NumberViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberViewModel.swift; sourceTree = "<group>"; };
 		7E8726A32AB7E79E000BF9A7 /* SimpleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleViewModel.swift; sourceTree = "<group>"; };
 		7E8726A52AB8BD73000BF9A7 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		7E8726A82AB8BDAD000BF9A7 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
+		7E8726AB2AB8BFDA000BF9A7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7E8726AE2AB8C0F3000BF9A7 /* RandomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomViewController.swift; sourceTree = "<group>"; };
+		7E8726B02AB8C26C000BF9A7 /* RandomViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +142,9 @@
 		7E8726382AAE993B000BF9A7 /* SeSACUnsplash */ = {
 			isa = PBXGroup;
 			children = (
+				7E8726AA2AB8BFD0000BF9A7 /* Extension */,
+				7E8726A72AB8BD9B000BF9A7 /* Network */,
+				7E8726AD2AB8C0E0000BF9A7 /* RandomPhoto */,
 				3285D0F52AB86C0300584B29 /* SignUp */,
 				7E8726982AB73E1C000BF9A7 /* Setting */,
 				7E87268D2AB296D9000BF9A7 /* New */,
@@ -181,7 +192,6 @@
 			isa = PBXGroup;
 			children = (
 				7E8726772AB02A47000BF9A7 /* Photo.swift */,
-				7E8726792AB02A5D000BF9A7 /* APIService.swift */,
 				7E87267B2AB02B44000BF9A7 /* PhotoViewController.swift */,
 				7E87267D2AB02DA5000BF9A7 /* PhotoViewModel.swift */,
 			);
@@ -216,6 +226,32 @@
 				7E87269D2AB74D75000BF9A7 /* FocusModeType.swift */,
 			);
 			path = Setting;
+			sourceTree = "<group>";
+		};
+		7E8726A72AB8BD9B000BF9A7 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				7E8726792AB02A5D000BF9A7 /* APIService.swift */,
+				7E8726A82AB8BDAD000BF9A7 /* APIKey.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		7E8726AA2AB8BFD0000BF9A7 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7E8726AB2AB8BFDA000BF9A7 /* Constants.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		7E8726AD2AB8C0E0000BF9A7 /* RandomPhoto */ = {
+			isa = PBXGroup;
+			children = (
+				7E8726AE2AB8C0F3000BF9A7 /* RandomViewController.swift */,
+				7E8726B02AB8C26C000BF9A7 /* RandomViewModel.swift */,
+			);
+			path = RandomPhoto;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,12 +341,14 @@
 				7E87263E2AAE993B000BF9A7 /* ViewController.swift in Sources */,
 				7E87263A2AAE993B000BF9A7 /* AppDelegate.swift in Sources */,
 				3285D0F72AB86C1600584B29 /* SignUpViewController.swift in Sources */,
+				7E8726AC2AB8BFDA000BF9A7 /* Constants.swift in Sources */,
 				3285D0FB2AB870B600584B29 /* SignUpFieldType.swift in Sources */,
 				3285D0FD2AB89D0400584B29 /* SignUpViewModel.swift in Sources */,
 				7E8726912AB2A00F000BF9A7 /* SimpleCollectionViewController.swift in Sources */,
 				7E87269E2AB74D75000BF9A7 /* FocusModeType.swift in Sources */,
 				7E8726852AB13DAC000BF9A7 /* CalObservable.swift in Sources */,
 				3285D0F92AB86CB700584B29 /* SignUpView.swift in Sources */,
+				7E8726B12AB8C26C000BF9A7 /* RandomViewModel.swift in Sources */,
 				7E87266C2AAFED54000BF9A7 /* LoginViewController.swift in Sources */,
 				7E87267A2AB02A5D000BF9A7 /* APIService.swift in Sources */,
 				7E87267C2AB02B44000BF9A7 /* PhotoViewController.swift in Sources */,
@@ -319,6 +357,7 @@
 				7E8726812AB139D9000BF9A7 /* CalculateViewController.swift in Sources */,
 				7E87266E2AAFF2FB000BF9A7 /* Observable.swift in Sources */,
 				7E8726A42AB7E79E000BF9A7 /* SimpleViewModel.swift in Sources */,
+				7E8726A92AB8BDAD000BF9A7 /* APIKey.swift in Sources */,
 				7E8726A22AB7D931000BF9A7 /* NumberViewModel.swift in Sources */,
 				7E87263C2AAE993B000BF9A7 /* SceneDelegate.swift in Sources */,
 				7E8726732AB0015A000BF9A7 /* SampleViewModel.swift in Sources */,
@@ -326,6 +365,7 @@
 				7E87267E2AB02DA5000BF9A7 /* PhotoViewModel.swift in Sources */,
 				7E8726702AAFFDE7000BF9A7 /* SampleViewController.swift in Sources */,
 				7E8726A02AB7D345000BF9A7 /* NumberViewController.swift in Sources */,
+				7E8726AF2AB8C0F3000BF9A7 /* RandomViewController.swift in Sources */,
 				7E87269A2AB73E67000BF9A7 /* FocusModeViewController.swift in Sources */,
 				7E8726752AB00E45000BF9A7 /* LoginViewModel.swift in Sources */,
 			);

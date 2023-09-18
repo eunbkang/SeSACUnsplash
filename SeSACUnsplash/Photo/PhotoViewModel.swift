@@ -20,7 +20,9 @@ class PhotoViewModel {
     }
     
     func fetchPhoto(query: String) {
-        APIService.shared.searchPhoto(query: query) { photo in
+        guard let url = URL(string: Constants.BaseUrl.search + "\(query)") else { return }
+        
+        APIService.shared.callRequest(url: url, model: Photo.self) { photo in
             DispatchQueue.main.async {
                 guard let photo = photo else { return }
                 self.list.value = photo
