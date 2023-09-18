@@ -23,7 +23,7 @@ final class SignUpViewController: UIViewController {
         
         viewModel.isValid.bind { bool in
             self.signUpView.signUpButton.isEnabled = bool
-            self.signUpView.signUpButton.backgroundColor = bool ? .white : .systemGray4
+            self.signUpView.signUpButton.backgroundColor = bool ? .white : .systemGray
         }
         
         viewModel.instructText.bind { text in

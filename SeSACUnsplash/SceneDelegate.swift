@@ -15,12 +15,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let scene = (scene as? UIWindowScene) else { return }
         
-//        window = UIWindow(windowScene: scene)
-//
-//        let nav = UINavigationController(rootViewController: SimpleCollectionViewController())
-//
-//        window?.rootViewController = nav
-//        window?.makeKeyAndVisible()
+        window = UIWindow(windowScene: scene)
+
+//        let nav = UINavigationController(rootViewController: SignUpViewController())
+
+        window?.rootViewController = SignUpViewController()
+        window?.makeKeyAndVisible()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

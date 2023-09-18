@@ -54,7 +54,7 @@ class SignUpView: UIView {
         button.setTitle("회원가입", for: .normal)
         button.setTitleColor(.black, for: .normal)
         button.titleLabel?.font = .systemFont(ofSize: 17, weight: .bold)
-        button.backgroundColor = .systemGray4
+        button.backgroundColor = .systemGray
         button.layer.cornerRadius = 8
         button.clipsToBounds = true
         
@@ -100,11 +100,16 @@ class SignUpView: UIView {
     private func configLayoutConstraints() {
         titleLabel.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
-            make.top.equalToSuperview()
+            make.top.equalTo(self.safeAreaLayoutGuide)
+        }
+        
+        signUpButton.snp.makeConstraints { make in
+            make.height.equalTo(48)
         }
         
         stackView.snp.makeConstraints { make in
             make.center.equalToSuperview()
+            make.horizontalEdges.equalToSuperview().inset(36)
         }
     }
     

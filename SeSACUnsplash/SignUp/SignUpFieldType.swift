@@ -17,7 +17,7 @@ enum SignUpFieldType {
     var placeholder: String {
         switch self {
         case .email:
-            return "이메일 주소 또는 전화번호"
+            return "이메일 주소"
         case .password:
             return "비밀번호"
         case .nickname:
@@ -26,6 +26,21 @@ enum SignUpFieldType {
             return "위치"
         case .code:
             return "추천 코드 입력"
+        }
+    }
+    
+    var instructText: String {
+        switch self {
+        case .email:
+            return "이메일 주소 형식에 맞게 입력하세요."
+        case .password:
+            return "비밀번호는 6자 이상, 10자 이하로 설정하세요."
+        case .nickname:
+            return "닉네임은 2자 이상, 16자 이하로 설정하세요."
+        case .location:
+            return ""
+        case .code:
+            return "추천코드는 숫자 6자리로 입력하세요."
         }
     }
 }
