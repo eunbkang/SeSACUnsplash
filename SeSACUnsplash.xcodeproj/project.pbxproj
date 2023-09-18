@@ -41,6 +41,7 @@
 		7E8726A02AB7D345000BF9A7 /* NumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E87269F2AB7D345000BF9A7 /* NumberViewController.swift */; };
 		7E8726A22AB7D931000BF9A7 /* NumberViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8726A12AB7D931000BF9A7 /* NumberViewModel.swift */; };
 		7E8726A42AB7E79E000BF9A7 /* SimpleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8726A32AB7E79E000BF9A7 /* SimpleViewModel.swift */; };
+		7E8726A62AB8BD73000BF9A7 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 7E8726A52AB8BD73000BF9A7 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +89,7 @@
 		7E87269F2AB7D345000BF9A7 /* NumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberViewController.swift; sourceTree = "<group>"; };
 		7E8726A12AB7D931000BF9A7 /* NumberViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberViewModel.swift; sourceTree = "<group>"; };
 		7E8726A32AB7E79E000BF9A7 /* SimpleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleViewModel.swift; sourceTree = "<group>"; };
+		7E8726A52AB8BD73000BF9A7 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 				7E8726572AAEAE2C000BF9A7 /* Localizable.strings */,
 				7E87265A2AAEBAB2000BF9A7 /* String+Extension.swift */,
 				7E8726602AAEBDDC000BF9A7 /* InfoPlist.strings */,
+				7E8726A52AB8BD73000BF9A7 /* .gitignore */,
 			);
 			path = SeSACUnsplash;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 				7E8726552AAEAE2C000BF9A7 /* Localizable.strings in Resources */,
 				7E8726432AAE993C000BF9A7 /* Assets.xcassets in Resources */,
 				7E8726412AAE993B000BF9A7 /* Main.storyboard in Resources */,
+				7E8726A62AB8BD73000BF9A7 /* .gitignore in Resources */,
 				7E87265E2AAEBDDC000BF9A7 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
