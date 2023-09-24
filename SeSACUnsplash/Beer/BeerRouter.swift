@@ -35,7 +35,7 @@ enum BeerRouter: URLRequestConvertible {
     
     func asURLRequest() throws -> URLRequest {
         let url = baseURL.appendingPathComponent(path)
-        var request = URLRequest(url: url)
+        let request = URLRequest(url: url)
         
         return request
     }

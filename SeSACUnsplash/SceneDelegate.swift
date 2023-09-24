@@ -17,9 +17,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         window = UIWindow(windowScene: scene)
 
-//        let nav = UINavigationController(rootViewController: SignUpViewController())
+        let nav = UINavigationController(rootViewController: BeerViewController())
 
-        window?.rootViewController = RandomViewController()
+        window?.rootViewController = nav
         window?.makeKeyAndVisible()
     }
 
